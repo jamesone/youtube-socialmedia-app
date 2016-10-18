@@ -1,0 +1,174 @@
+
+body{
+	font-family: 'Slabo 27px', serif;
+}
+
+//Wrap of video page
+.controller-wrap{
+        padding-left: 118px;
+        // color: white;
+}
+
+//Match section styling
+.matches-wrap{
+	display: inline-block;
+	margin-left:30px;
+}
+
+//Comments section
+.deleted-comment{
+	color: green;
+	padding: 5px; 
+	width: 120px;
+	border: solid 2px green;
+	text-align: center;
+	margin: 3px;
+}
+
+
+
+
+
+
+//GLOBAL PLAYLIST PAGE############################################################################
+
+.slider {
+    position: relative;
+    
+    //temporary
+    // background-color: #ccc;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+
+	.playlist-slider-item{
+	    .play-thumb{
+    	width: 200px;
+    	height:113px;
+		background-position: 50% 50%;
+		background-size: 100% 100%;
+		  // width: 100%;
+		  // padding: 70.125%;
+	    }
+	}
+}
+.playlist {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    //Can change the width of the slider to anything
+    width: 2000px;
+}
+.playlist-slider-item {
+    float: left;
+    
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    
+    //Temporary styling
+    width: 200px;
+    height: 150px;
+    
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+.playlist-item:hover {
+	//Can change what happens here
+    opacity: 0.5;
+}
+
+//Will change these to something nice (opacity black with grey arrow)
+.left, .right {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    top: 57px;
+    
+    cursor: pointer;
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+
+//playlist videos
+.hover-details{
+	display: none;
+	height: 350px;
+	width: 100%;
+}
+.playlist-video-info{
+	display: none;
+	width: 100%;
+	height: 300px;
+}
+
+
+//USER PROFILE STYLING
+.button-followed{
+	border: solid 2px green;
+	background-color: white;
+	cursor: pointer;
+
+}
+
+//Comment section styling
+.comment-wrap{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+
+   
+     .comment-header{
+        border-bottom: solid 1px rgba(0,0,0,0.3);
+        img{
+            width: 80px;
+            height: auto;
+            border-radius: 500px;
+        }
+        span{
+            position: absolute;
+            margin-left: -1px;
+            margin-top: 58px;
+        }
+    }
+    .comment-content{
+        margin: 2px 15% 2px 15%;
+    }
+
+}
+.comment-form-wrap{
+    .comment-form{
+        background-color: #fff;
+        padding: 10px;
+        textarea{
+            width: 92%;
+            border: none;
+            resize: none;
+            padding: 5px;
+            background-color: #EFEFF2;
+        }
+    }
+}
+
+//Import other stylesheets
+@import 'myprofile';
+@import 'nav';
+@import 'videosPage';
+@import 'login';
+

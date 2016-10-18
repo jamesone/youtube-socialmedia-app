@@ -1,0 +1,270 @@
+body{
+	background-color: #EFEFF2;
+}
+//Grey feature colour
+$lighterFeature: #3E3E40;
+$textColor: #B4B4B7;
+
+//Category wrapper
+.cat-wrap{
+	display: none;
+	ul{
+		display: inline-block;
+		color: $textColor;
+		li{
+			list-style-type: none;
+			width: 100px;
+			border-bottom: solid 1px rgba(0,0,0,0.2);
+			//GREY COLOUR:
+			// background-color: $lighterFeature;
+			background-color: #F8F8FA;
+			padding: 7px 0px 7px 13px;
+		}
+		&:first-child{
+			padding-left: 0px;
+			-webkit-padding-start: 0px;
+			padding-start: 0px;
+		}
+
+	}
+	//The sub categorie ul
+	.sub-cats-wrap{
+		padding: 0px;
+		display: none;
+		// position: absolute;
+		li{
+
+		}
+	}
+//Toggle class for cat menu
+	.clicked{
+		background-color: #59595b;
+
+	}
+}
+.content-wrap{
+	display: inline-block;
+}
+
+//Video page stats
+.details-block{
+	background-color: lightgrey;
+	padding: 10px;
+}
+.video-left{
+	// float: left;
+	display: inline-block;
+
+	iframe{
+		// float: left;
+	}
+}
+.video-details{
+	padding: 20px;
+//Like share form
+	form{
+		display: inline-block;
+		float: left;
+
+		// input[type='submit']{
+		// 	background-color: white;
+		//     border: solid 1px black;
+
+		//     border-radius: 5px;
+		//     cursor: pointer;
+
+		//     &:nth-child(1){
+		//     	&:hover{
+		//     		background-color: #77C820;
+		//     		color: white;
+		//     		border: solid 1px #77C820;
+		//     		// border: solid 1px green;
+		//     	}
+		//     }
+		//      &:nth-child(2){
+		//     	&:hover{
+		//     		background-color: #f43047;
+		//     		color: white;
+		//     		// margin: 5px;
+		//     		border: solid 1px #f43047;
+
+		//     		// border: solid 1px green;
+		//     	}
+		//     }
+		// }
+
+	}
+}
+.content-tile{
+	background-color: #fff;
+	.add-playlist{
+		background-color: #F8F8F9;
+	    margin-top: -5px;
+	    padding: 10px;
+	}
+}
+.video-stats{
+	float: right;
+	display: inline-block;
+	padding: 4px 20px 0px 0px;
+
+	span{
+
+		&:first-child{
+			padding-right: 10px;
+		}
+	}
+	.seperator{
+		border-color: #efeff2;
+		// opacity: 0.8;
+	}
+
+}
+.video-cats{
+	margin-top: 25px;
+	// .cat-list{
+	// 	border: solid black 1px;
+	// 	padding: 3px;
+	// 	border-radius: 6px;
+	// 	display: inline-block;
+	// 	font-size: 13px;	
+
+	// }
+}
+.cat-list{
+		border: solid black 1px;
+		padding: 3px;
+		border-radius: 6px;
+		display: inline-block;
+		font-size: 13px;	
+
+	}
+
+.seperator{
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.show-hide-cats{
+	display: block;
+}
+.chosen-cat-wrap{
+	margin: 5px 0px 5px 0px;
+	padding: 3px;	
+	display: inline-block;
+	// border: solid 2px grey;
+	//This is the add to playlist form
+	form{
+		display: inline-block;
+
+	}
+	h3{
+		display: inline-block;
+	}
+	span{
+		@extend .cat-list;
+		padding: 5px;
+		margin: 4px;
+	}
+	.chosen-cats{
+		display: inline-block;
+		padding: 10px;
+	}
+
+}
+.suggestions-wrap{
+	display: inline-block;
+}
+
+//Share popover style
+//Youtube Video - Like, share, dislike, add to playlist
+.share-wrap{
+	//Center align
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	transform: translate(-50%, -50%);
+	//Center align
+
+	display: none;
+    position: fixed;
+    width: 453px;
+    height: 420px;
+    padding: 10px;
+    background-color: #2E2F33;
+
+    header{
+    	text-align: center;
+    	border-bottom: solid 1px $lighterFeature;
+    	margin-bottom: 20px;
+    	color: white;
+    	h2{
+    		margin: 2px;
+    		padding: 1px;
+    	}
+    }
+    section{
+    	 padding: 5px;
+    	span{
+    		color: white;
+    	}
+    	.thumb{
+    		height: 100%;
+    		background-color: #222326;
+	    	.play-thumb{
+	    		display: inline-block;
+	    	}
+	    	.share-embed-title{
+	    		display: inline-block;
+			    color: white;
+			    position: absolute;
+			    margin: 10px 0px 0px 10px;
+			    
+			}
+	    }
+    	.form-section{
+    		form{
+    			float: none;
+    			display: initial;
+    		}
+    		textarea{
+    			width: 99%;
+    			resize: none;
+    			background-color: white;
+    			color: $lighterFeature;
+    			border: none;
+    			border-radius: 2px;
+    			height: 100px;
+    		}
+    	}
+    }
+    footer{
+
+    	form{
+    		float: right;
+		    margin-right: 15px;
+			padding-top: 28px;
+
+    		input[type='submit'], input[type='button']{
+    			padding: 7px;
+    			background-color: #648F00;
+    			border: none;
+    			border-radius: 20px;
+    			color: white;
+    			cursor: pointer;
+    			// width: px;
+
+    			text-align: center;
+    			font-size: 15px;
+    			text-transform: uppercase;
+    		}
+    		input[type='button']{
+    			background-color: #252629;
+    		}
+    	}
+    }
+}
+.signup-ad{
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 3px;
+}

@@ -1,0 +1,101 @@
+
+
+//Playlist section
+.sidebar{
+	//This section stays left;
+	display: inline-block;
+	float: left;
+	width: 185px;
+	.playlist-head{
+		//Name of playlist
+	}
+	.playlist-item{
+		//wrapper of video details in the playlist.
+		// width: 250px;
+		font-size:10px;
+		.play-thumb{
+		  // width: 100px;
+		  // height: 80px;
+		}
+		.play-title{
+
+		}
+	}
+}
+.myprofile-page{
+	.controller-wrap{
+		padding-left: 118px;
+		// color: white;
+	}
+	//Center sidebar items
+	.container{
+		text-align: center;
+	}
+	//Playlist section
+	.playlist-profile-wrap{
+		background-color: lightgray;
+	}
+
+	.playlist-head{
+		background-color: grey;
+	    padding: 1px;
+	    margin-bottom: 24px;
+	    margin-top: 24px;
+
+	    &:first-child{
+	    	margin-top: 0px;
+	    }
+	}
+	//Playlist section
+
+
+
+	//User details - Profile page
+	.user-details{
+		// text-align: left;
+		background-color: #696969;
+		padding-bottom: 20px;
+		img{
+			height: 183px;
+			width: auto;
+			//For circle image ->
+			// border-radius: 500px;
+
+		}
+		.text-details{
+
+		}
+	}
+
+
+	.playlist-video-show{
+		display: none;
+		width: 400px;
+		iframe{
+			width: 300px;
+		}
+	}
+
+	//news feed section
+	.feed-container{
+		// margin-top:31px;
+		display: inline-block;
+		// text-align: initial;
+		// position: absolute;
+		padding-left: 50px;
+	}
+	//Posts
+	// .post-head{
+	// 	// img{
+	// 	// 	height: 80px;
+	// 	// 	width: auto;
+	// 	// }
+	// }
+	.prof-img{
+		height: 45px;
+		width: auto;
+	}
+	
+}
+
+

@@ -1,0 +1,490 @@
+body {
+  font-family: 'Slabo 27px', serif;
+}
+
+.controller-wrap {
+  padding-left: 118px;
+}
+
+.matches-wrap {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.deleted-comment {
+  color: green;
+  padding: 5px;
+  width: 120px;
+  border: solid 2px green;
+  text-align: center;
+  margin: 3px;
+}
+
+.slider {
+  position: relative;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.slider .playlist-slider-item .play-thumb {
+  width: 200px;
+  height: 113px;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+.playlist {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 2000px;
+}
+
+.playlist-slider-item {
+  float: left;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  border: 0;
+  width: 200px;
+  height: 150px;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+}
+
+.playlist-item:hover {
+  opacity: 0.5;
+}
+
+.left, .right {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  top: 57px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.hover-details {
+  display: none;
+  height: 350px;
+  width: 100%;
+}
+
+.playlist-video-info {
+  display: none;
+  width: 100%;
+  height: 300px;
+}
+
+.button-followed {
+  border: solid 2px green;
+  background-color: white;
+  cursor: pointer;
+}
+
+.comment-wrap {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.comment-wrap .comment-header {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+.comment-wrap .comment-header img {
+  width: 80px;
+  height: auto;
+  border-radius: 500px;
+}
+.comment-wrap .comment-header span {
+  position: absolute;
+  margin-left: -1px;
+  margin-top: 58px;
+}
+.comment-wrap .comment-content {
+  margin: 2px 15% 2px 15%;
+}
+
+.comment-form-wrap .comment-form {
+  background-color: #fff;
+  padding: 10px;
+}
+.comment-form-wrap .comment-form textarea {
+  width: 92%;
+  border: none;
+  resize: none;
+  padding: 5px;
+  background-color: #EFEFF2;
+}
+
+.sidebar {
+  display: inline-block;
+  float: left;
+  width: 185px;
+}
+.sidebar .playlist-item {
+  font-size: 10px;
+}
+
+.myprofile-page .controller-wrap {
+  padding-left: 118px;
+}
+.myprofile-page .container {
+  text-align: center;
+}
+.myprofile-page .playlist-profile-wrap {
+  background-color: lightgray;
+}
+.myprofile-page .playlist-head {
+  background-color: grey;
+  padding: 1px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.myprofile-page .playlist-head:first-child {
+  margin-top: 0px;
+}
+.myprofile-page .user-details {
+  background-color: #696969;
+  padding-bottom: 20px;
+}
+.myprofile-page .user-details img {
+  height: 183px;
+  width: auto;
+}
+.myprofile-page .playlist-video-show {
+  display: none;
+  width: 400px;
+}
+.myprofile-page .playlist-video-show iframe {
+  width: 300px;
+}
+.myprofile-page .feed-container {
+  display: inline-block;
+  padding-left: 50px;
+}
+.myprofile-page .prof-img {
+  height: 45px;
+  width: auto;
+}
+
+.nav-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  background-color: #1F1F29;
+  max-width: 94px;
+  color: #B4B4B7;
+}
+.nav-wrap ul {
+  position: relative;
+  left: -22px;
+}
+.nav-wrap ul a {
+  text-decoration: none;
+}
+.nav-wrap ul a:visited {
+  color: #B4B4B7;
+}
+.nav-wrap ul a:link {
+  color: #B4B4B7;
+}
+.nav-wrap ul li {
+  color: #B4B4B7;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 16px;
+}
+.nav-wrap ul li i {
+  font-size: 1.5em;
+}
+.nav-wrap ul li:hover {
+  color: white;
+}
+.nav-wrap ul img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 500px;
+}
+.nav-wrap ul .bottom-nav {
+  position: relative;
+  top: 70px;
+  border-top: solid rgba(0, 0, 0, 0.4) 1px;
+}
+.nav-wrap ul .bottom-nav .nav-name {
+  font-size: 13px;
+}
+
+.nav-followers {
+  padding: 2px;
+  border: solid 2px grey;
+  border-radius: 4px;
+}
+.nav-followers span {
+  font-size: 9px;
+}
+
+.search-bar {
+  background-color: #222326;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 94px;
+  margin-right: 70px;
+  width: 300px;
+  display: none;
+}
+
+.bar-head {
+  background-color: #3E3E40;
+  width: 100%;
+  height: 50px;
+}
+.bar-head input {
+  width: 174px;
+  margin: 0 auto;
+  padding: 3px;
+  margin-left: 18%;
+  margin-top: 13px;
+}
+
+body {
+  background-color: #EFEFF2;
+}
+
+.cat-wrap {
+  display: none;
+}
+.cat-wrap ul {
+  display: inline-block;
+  color: #B4B4B7;
+}
+.cat-wrap ul li {
+  list-style-type: none;
+  width: 100px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  background-color: #F8F8FA;
+  padding: 7px 0px 7px 13px;
+}
+.cat-wrap ul:first-child {
+  padding-left: 0px;
+  -webkit-padding-start: 0px;
+  padding-start: 0px;
+}
+.cat-wrap .sub-cats-wrap {
+  padding: 0px;
+  display: none;
+}
+.cat-wrap .clicked {
+  background-color: #59595b;
+}
+
+.content-wrap {
+  display: inline-block;
+}
+
+.details-block {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.video-left {
+  display: inline-block;
+}
+
+.video-details {
+  padding: 20px;
+}
+.video-details form {
+  display: inline-block;
+  float: left;
+}
+
+.content-tile {
+  background-color: #fff;
+}
+.content-tile .add-playlist {
+  background-color: #F8F8F9;
+  margin-top: -5px;
+  padding: 10px;
+}
+
+.video-stats {
+  float: right;
+  display: inline-block;
+  padding: 4px 20px 0px 0px;
+}
+.video-stats span:first-child {
+  padding-right: 10px;
+}
+.video-stats .seperator {
+  border-color: #efeff2;
+}
+
+.video-cats {
+  margin-top: 25px;
+}
+
+.cat-list, .chosen-cat-wrap span {
+  border: solid black 1px;
+  padding: 3px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.seperator {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.show-hide-cats {
+  display: block;
+}
+
+.chosen-cat-wrap {
+  margin: 5px 0px 5px 0px;
+  padding: 3px;
+  display: inline-block;
+}
+.chosen-cat-wrap form {
+  display: inline-block;
+}
+.chosen-cat-wrap h3 {
+  display: inline-block;
+}
+.chosen-cat-wrap span {
+  padding: 5px;
+  margin: 4px;
+}
+.chosen-cat-wrap .chosen-cats {
+  display: inline-block;
+  padding: 10px;
+}
+
+.suggestions-wrap {
+  display: inline-block;
+}
+
+.share-wrap {
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  transform: translate(-50%, -50%);
+  display: none;
+  position: fixed;
+  width: 453px;
+  height: 420px;
+  padding: 10px;
+  background-color: #2E2F33;
+}
+.share-wrap header {
+  text-align: center;
+  border-bottom: solid 1px #3E3E40;
+  margin-bottom: 20px;
+  color: white;
+}
+.share-wrap header h2 {
+  margin: 2px;
+  padding: 1px;
+}
+.share-wrap section {
+  padding: 5px;
+}
+.share-wrap section span {
+  color: white;
+}
+.share-wrap section .thumb {
+  height: 100%;
+  background-color: #222326;
+}
+.share-wrap section .thumb .play-thumb {
+  display: inline-block;
+}
+.share-wrap section .thumb .share-embed-title {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  margin: 10px 0px 0px 10px;
+}
+.share-wrap section .form-section form {
+  float: none;
+  display: initial;
+}
+.share-wrap section .form-section textarea {
+  width: 99%;
+  resize: none;
+  background-color: white;
+  color: #3E3E40;
+  border: none;
+  border-radius: 2px;
+  height: 100px;
+}
+.share-wrap footer form {
+  float: right;
+  margin-right: 15px;
+  padding-top: 28px;
+}
+.share-wrap footer form input[type='submit'], .share-wrap footer form input[type='button'] {
+  padding: 7px;
+  background-color: #648F00;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.share-wrap footer form input[type='button'] {
+  background-color: #252629;
+}
+
+.signup-ad {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/*
+	All login page styling here
+*/
+.login-page-wrap {
+  /*
+  	Below is the styling for each side of the page - Login and signup
+  */
+}
+.login-page-wrap form input[type='text'], .login-page-wrap form input[type='password'], .login-page-wrap form input[type='email'], .login-page-wrap form textarea {
+  display: block;
+  margin: 5px;
+  width: 200px;
+}
+.login-page-wrap form .block {
+  display: block;
+}
+.login-page-wrap .signup-wrap {
+  margin-right: 40px;
+  float: left;
+  display: inline-block;
+}
+.login-page-wrap .login-wrap {
+  display: inline-block;
+}

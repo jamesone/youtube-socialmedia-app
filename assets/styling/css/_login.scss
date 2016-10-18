@@ -1,0 +1,30 @@
+/*
+	All login page styling here
+*/
+.login-page-wrap{
+
+	form{
+		// text-align: center;
+
+			input[type='text'],input[type='password'],input[type='email'], textarea{
+				display: block;
+				margin: 5px;
+				width: 200px;
+			}
+			.block{
+				display: block;	
+			}
+	}
+	/*
+		Below is the styling for each side of the page - Login and signup
+	*/
+	.signup-wrap{
+		margin-right: 40px;
+		float: left;
+		display: inline-block;
+	}
+	.login-wrap{
+		display: inline-block;
+	}
+
+}
